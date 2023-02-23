@@ -2,10 +2,15 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="partials :: head ('Showing all posts')"></head>
 <body>
-<div th:each="post : ${posts}">
-	<h1 th:text="${post.title}"></h1>
-	<h5 th:text="${post.body}"></h5>
-	<p>id: <span th:text="${post.id}"></span> </p>
-</div>
+<nav th:replace="partials :: navbar"></nav>
+<main class="container">
+	<div th:each="post : ${posts}">
+		<h1 th:text="${post.title}"></h1>
+		<h5 th:text="${post.body}"></h5>
+		<p>id: <span th:text="${post.id}"></span> </p>
+	</div>
+</main>
+<footer th:replace="partials :: footer"></footer>
+<div th:replace="partials :: boot-scripts"></div>
 </body>
 </html>

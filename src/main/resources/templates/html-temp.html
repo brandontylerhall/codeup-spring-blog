@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="partials :: head ('')" />
+<head th:replace="partials :: head ('')"></head>
 <body>
+<nav th:replace="partials :: navbar"></nav>
+<main class="container">
+
+</main>
+<footer th:replace="partials :: footer"></footer>
+<div th:replace="partials :: boot-scripts"></div>
 </body>
 </html>

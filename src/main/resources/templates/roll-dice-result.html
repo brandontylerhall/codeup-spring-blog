@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <head th:replace="partials :: head ('Your luck has been decided')" />
+</head>
+<body>
+<p>You guessed: <span th:text="${guess}"></span></p>
+<p>The roll was: <span th:text="${roll}"></span></p>
+<p><span th:text="${message}"></span></p>
+</body>
+</html>

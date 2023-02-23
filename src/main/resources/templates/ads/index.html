@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="partials :: head ('Showing all ads')"></head>
+<body>
+<div th:each="ad : ${ads}">
+  <h1 th:text="${ad.title}"></h1>
+  <h5 th:text="${ad.description}"></h5>
+  <p>id: <span th:text="${ad.id}"></span> </p>
+</div>
+</body>
+</html>

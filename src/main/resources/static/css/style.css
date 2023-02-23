@@ -1,10 +1,17 @@
-/*html, body {*/
-/*    height: 100%;*/
-/*}*/
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 
 a + a {
     margin-left: 1em;
 }
+
 
 .main-bg {
     background: #F7F3E3;
@@ -13,13 +20,13 @@ a + a {
 
 .main-container {
     display: flex;
-    min-height: 100vh;
+    min-height: 100%;
     flex-direction: column;
     justify-content: flex-start;
 }
 
 .nav-bg {
-    background: #C73E1D;
+    background: purple;
     color: #F7F3E3;
 }
 
@@ -36,6 +43,6 @@ a + a {
 }
 
 .footer-bg {
-    background: #0090C1;
+    background: teal;
     color: #F7F3E3;
 }

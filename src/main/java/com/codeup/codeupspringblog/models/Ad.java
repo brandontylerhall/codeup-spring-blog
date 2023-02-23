@@ -18,7 +18,7 @@ public class Ad {
     public Ad() {
     }
 
-    public Ad(long id, String title, String description, int userId, ArrayList<String> categories) {
+    public Ad(long id, String title, String description, int userId) {
         this.id = id;
         this.title = title;
         this.description = description;

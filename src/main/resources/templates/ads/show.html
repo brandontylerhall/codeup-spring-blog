@@ -6,7 +6,7 @@
 <nav th:replace="partials :: navbar"></nav>
 <main class="container">
 	<h1 th:text="${ad.title}"></h1>
-	<h2>By: <span th:text="${ad.userId}"></span></h2>
+	<h2>By: <span th:text="${ad.user.username}"></span></h2>
 	<p th:text="${ad.description}"></p>
 	<div th:if="${userIsCreator}">
 		<button>Edit Ad</button>

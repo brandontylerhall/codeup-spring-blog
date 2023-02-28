@@ -6,7 +6,8 @@
 <main class="container">
 	<h1 th:text="${post.title}"></h1>
 	<h3 th:text="${post.body}"></h3>
-	<p>id: <span th:text="${post.id}"></span></p>
+	<p>By: <span th:text="${post.user.username}"></span></p>
+	<p>Contact: <span th:text="${post.user.email}"></span></p>
 </main>
 <footer th:replace="partials :: footer"></footer>
 <div th:replace="partials :: boot-scripts"></div>

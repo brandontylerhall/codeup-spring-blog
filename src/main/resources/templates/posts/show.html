@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head th:replace="partials :: head ('Showing one post')"></head>
 <body>
 <nav th:replace="partials :: navbar"></nav>
 <main class="container">
 	<h1 th:text="${post.title}"></h1>
 	<h3 th:text="${post.body}"></h3>
-	<p>By: <span th:text="${post.user.username}"></span></p>
-	<p>Contact: <span th:text="${post.user.email}"></span></p>
+	<p th:text="|By: ${post.user.username}|"></p>
+	<p th:text="|Contact: ${post.user.email}|"></p>
 </main>
 <footer th:replace="partials :: footer"></footer>
 <div th:replace="partials :: boot-scripts"></div>
